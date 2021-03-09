@@ -1,0 +1,24 @@
+<launch>
+ 	<param name="/mission_param" type="int" value="10" />
+	<param name="/hand1" type="int" value="1" />
+	<param name="/hand2" type="int" value="2" />
+	<node name="ST2" pkg="mission" output = "screen" type="ST2" />
+	<node name="planer" pkg="mission" type="planer" />
+	<node name="main_talker_launch" pkg="mission" type="main_talker_launch" />
+	<!-- <node name="mission_topic_big" pkg="mission" type="mission_action"/>  -->
+	<node name="mission_topic_big" pkg="mission" output = "screen" type="mission_topic_big" />
+	<!--<node name="serial_port_node" pkg="serial_port" output = "screen" type="serial_port" />
+	<node pkg="tx_simulation" type="txSimulation" name="txSimulation" output="screen" respawn="true" >
+	</node>
+	
+	<node pkg="tx_simulation" type="txkeyboardInput" name="txkeyboardInput" output="screen" respawn="true" >
+	</node>
+
+	<param name="/ST1num1" type="int" value="49" />
+	<param name="/ST1num2" type="int" value="0" />
+	<param name="/ST1num3" type="int" value="0" />
+	<param name="/ST1num4" type="int" value="0" />
+	<param name="/ST1num5" type="int" value="0" />
+	<param name="/ST1num6" type="int" value="0" />
+-->
+</launch>
